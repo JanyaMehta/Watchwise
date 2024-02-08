@@ -19,6 +19,12 @@ const MovieList = () => {
     }
   };
 
+const truncateOverview = (overview, maxLength) => {
+    if (overview.length <= maxLength) return overview;
+    return overview.substring(0, maxLength) + '...';
+  };
+
+
   return (  
     <div className="movie-list">
       {movies && movies.map(movie => (
@@ -26,7 +32,8 @@ const MovieList = () => {
           <img className="movie-poster" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
           <div className="movie-details">
             <h2 className="movie-title">{movie.title}</h2>
-             <p className="movie-overview">{movie.overview}</p>
+          {/*    overview remains generalized for every card */}
+             <p className="movie-overview">{truncateOverview(movie.overview, 50)}</p>
             <p className="movie-year">{movie.release_date}</p>
           </div>
         </div>
