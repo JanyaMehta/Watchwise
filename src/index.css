@@ -104,7 +104,7 @@
 }
 
 /* Movie details */
-.movie-card .movie-details {
+.movie-card .movie-preview{
   padding: 20px;
 }
 
@@ -119,4 +119,71 @@
 .movie-card .movie-year {
   font-size: 1rem;
   color: #666;
+}
+
+
+
+
+
+
+/* Styles for the movie details container */
+.movie-details {
+  padding: 20px;
+}
+
+/* Styles for the movie card */
+.movie-card-details {
+  background-color: #f9fafb;
+  /* Light gray background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow effect */
+  display: flex;
+}
+
+/* Styles for the movie poster image */
+.movie-poster {
+  width: 200px;
+  /* Fixed width */
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Styles for the movie details content */
+.movie-details-content {
+  padding: 20px;
+}
+
+/* Styles for the movie title */
+.movie-details-content h2 {
+  font-size: 24px;
+  color: #333;
+  /* Dark text color */
+  margin-bottom: 10px;
+}
+
+/* Styles for the movie overview */
+.movie-details-content p {
+  font-size: 16px;
+  color: #555;
+  /* Dark gray text color */
+  margin-bottom: 20px;
+}
+
+/* Styles for the release date */
+.release-date {
+  font-size: 18px;
+  color: #ff6b6b;
+  /* Coral color */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles for the vote average */
+.vote-average {
+  font-size: 18px;
+  color: #333;
+  /* Dark text color */
+  font-weight: bold;
 }

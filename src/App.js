@@ -1,18 +1,23 @@
-import MovieList from "./MovieList";
+import Home from "./Home";
 import Navbar from "./Navbar";
 import './index.css';
-import { BrowserRouter} from "react-router-dom";
-// import Home from "/";
-// import SignUp from "/";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MovieDetails from "./MovieDetails";
+
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
     <div className="App">
       <Navbar />
-      <MovieList />
+      <div className="content">
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/movie/:id" element={<MovieDetails />} />
+          </Routes>
+      </div>
     </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
