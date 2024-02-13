@@ -1,8 +1,18 @@
-import React from 'react';
 import logoImage from './logo.png';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
+
+  const handleSignUpClick = () => {
+   navigate('/signup');
+  };
   return (
     <nav className="navbar">
       <div className="container mx-auto flex justify-between items-center">
@@ -14,8 +24,8 @@ function Navbar() {
           <input type="text" placeholder="Search..." className="search-input" />
         </div>
         <div className="button-group">
-          <button className="signup-btn">Sign Up</button>
-          <button className="login-btn">Login</button>
+          <button onClick={handleSignUpClick} className="signup-btn">Sign Up</button>
+          <button onClick={handleLoginClick} className="login-btn" >Login</button>
         </div>
       </div>
     </nav>

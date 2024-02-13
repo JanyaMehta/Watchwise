@@ -174,8 +174,7 @@
 /* Styles for the release date */
 .release-date {
   font-size: 18px;
-  color: #ff6b6b;
-  /* Coral color */
+  color: coral;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -186,4 +185,63 @@
   color: #333;
   /* Dark text color */
   font-weight: bold;
+}
+
+
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  background:#333;
+  /* Gradient background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.login-form .error-message {
+  color: #ff5555;
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-form button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.logo-login {
+  display: block;
+  margin: 0 auto 30px;
+  width: 80px;
 }

@@ -22,7 +22,7 @@ const MovieDetails = () => {
           <div className="movie-details-content">
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
-            <p className="release-date">Release Date: {movie.release_date}</p> {/* Add class for styling */}
+            <div className="release-date">Release Date: {movie.release_date}</div> 
             <div className="vote-average">Vote Average: {movie.vote_average}</div>
           </div>
         </div>
